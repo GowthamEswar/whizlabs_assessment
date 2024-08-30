@@ -1,0 +1,92 @@
+.product-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-textarea {
+    height: 80px;
+}
+
+.form-button,
+.add-button,
+.rm-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-button:hover,
+.add-button:hover,
+.rm-button:hover {
+    background-color: #0056b3;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: left;
+}
+
+.card {
+    padding: 10px;
+    box-shadow: 0 0px 4px 0 rgb(240, 231, 231);
+    transition: 0.3s;
+    width: 28%;
+    border-radius: 5px;
+}
+
+.modal_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: rgba(51, 51, 51, 0.6);
+    z-index: 1000;
+}
+
+.modal_container {
+    box-sizing: border-box;
+    position: fixed;
+    background: #FFFFFF;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container .add-button {
+margin-right: 50px;
+}

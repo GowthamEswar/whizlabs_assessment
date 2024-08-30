@@ -1,0 +1,1443 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+html {
+  font-family: "Inter";
+  scroll-behavior: smooth;
+}
+
+p {
+  margin: 10px 0;
+}
+
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --color-lightGrey: #a6a6a8;
+  --primary-btn-color: #18334c;
+  --color-white: #ffffff;
+}
+
+.mtb1 {
+  margin: 10px 0;
+}
+
+.mtb2 {
+  margin: 20px 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-inter);
+  font-style: normal;
+  overflow-x: hidden !important;
+  /*getting horizontal scroll throughout appliation*/
+}
+
+.react-tabs__tab:focus::after {
+  background: none;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: inter;
+}
+
+.pressure_name {
+  color: #fa5959;
+}
+
+.minimal_container {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.minimal_left_signIn .minimal_left_banner {
+  width: 95%;
+  height: 100vh;
+  object-fit: cover;
+  cursor: default;
+}
+
+.minimal_left_logo {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  width: 210px;
+  height: 76px;
+  shape-rendering: crispedges;
+  cursor: default;
+}
+
+.minimal_left_signIn,
+.minimal_left_signUp {
+  width: 50%;
+  height: 100%;
+}
+
+.minimal_right {
+  width: 50%;
+  height: 100vh;
+}
+
+.minimal_right_container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sign_in_container {
+  width: 60%;
+  margin: auto;
+}
+
+.textField_container {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 5px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 14px;
+  font-family: var(--font-inter);
+  padding-left: 5px;
+}
+
+
+.form_row_info {
+  display: flex;
+  gap: 20px;
+}
+
+.form_row_info .input_container,
+.form_row_info .date_container,
+.form_row_info .info_select {
+  width: 32%;
+  margin-top: 10px;
+}
+
+.patient_calendar_container,
+.add_patient_calendar_container {
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 4px;
+  position: relative;
+  width: 32%;
+  height: 40px;
+  text-align: left;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.patient_calendar_container {
+  margin-top: 10px;
+}
+
+.patient_calendar_container p,
+.add_patient_calendar_container p {
+  margin-left: 20px;
+}
+
+.add_patient_calendar_icon {
+  position: absolute;
+  right: 5px;
+  top: 7px;
+}
+
+.placeholder {
+  color: #777777;
+  font-family: var(--font-inter);
+  font-size: 14px;
+}
+
+.patient_calendar,
+.add_patient_calendar {
+  position: absolute;
+  z-index: 1;
+  width: 250px;
+  left: 38%;
+}
+
+.add_patient_calendar {
+  top: 210px;
+  left: 270px;
+}
+
+.patient_calendar {
+  top: 400px;
+}
+
+.form_condition {
+  width: 50%;
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.form_condition .input_container {
+  width: 47.2%;
+}
+
+.form_input_row .input_container {
+  width: 32%;
+}
+
+.staff_address_row .input_container {
+  width: 99%;
+  margin: 0px 10px 0px 0px;
+}
+
+.email_input {
+  width: 100%;
+  padding: 12px 5px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 14px;
+  font-family: var(--font-inter);
+  background-position: 15px 13px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+}
+
+.number_input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.password_input {
+  width: 100%;
+  padding: 12px 5px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 14px;
+  font-family: var(--font-inter);
+  background-position: 15px 8px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+}
+
+.update_input {
+  width: 100%;
+  padding: 12px 5px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 14px;
+  font-family: var(--font-inter);
+  background-position: 15px 8px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+.update_input_address {
+  width: 100%;
+  padding: 12px 5px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 14px;
+  font-family: var(--font-inter);
+  background-position: 15px 8px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  height: 102px;
+  resize: none;
+}
+
+.text_input,
+.number_input {
+  width: 100%;
+  padding: 12px 5px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 14px;
+  font-family: var(--font-inter);
+  background-position: 15px 13px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+.text_input:disabled {
+  background-color: hsl(0, 0%, 95%);
+  border-color: hsl(0, 0%, 90%);
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.notes_input {
+  width: 100%;
+  padding: 12px 5px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 14px;
+  font-family: var(--font-inter);
+  background-position: 15px 13px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  height: 56px;
+  resize: none;
+}
+
+.notes_long_input {
+  width: 100%;
+  padding: 12px 5px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 14px;
+  font-family: var(--font-inter);
+  background-position: 15px 13px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  height: 110px;
+  resize: none;
+}
+
+.notes_short_input {
+  width: 100%;
+  padding: 12px 5px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 14px;
+  font-family: var(--font-inter);
+  background-position: 15px 13px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  height: 42px;
+  resize: none;
+  padding-right: 110px;
+}
+
+.careplan_text_input {
+  width: 100%;
+  height: 116px;
+  padding: 12px 5px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 14px;
+  font-family: var(--font-inter);
+  background-position: 15px 13px;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  margin-right: 10px;
+}
+
+.careplan_repeat_input,
+.care_select_repeat_input {
+  width: 100%;
+  height: 116px;
+  padding: 12px 10px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 14px;
+  font-family: var(--font-inter);
+  background-position: 15px 13px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.age_filter_checkbox,
+.age_filter_checkbox_selected {
+  display: flex;
+  width: 100%;
+  padding: 6px 16px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 13px;
+  font-family: var(--font-inter);
+  background-position: 15px 13px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.careplan_repeat_input {
+  border: 1px solid var(--color-lightGrey);
+  background: transparent;
+}
+
+.care_select_repeat_input {
+  border: 1px solid #f6761a;
+  background: #fde8d8;
+}
+
+.age_filter_checkbox {
+  border: 1px solid var(--color-lightGrey);
+  background: transparent;
+}
+
+.age_filter_checkbox_selected {
+  border: 1px solid #f6761a;
+  background: #fde8d8;
+}
+
+.email_input {
+  background-image: url("./assets/emailIcon.svg");
+}
+
+.password_input {
+  background-image: url("./assets/PasswordIcon.svg");
+}
+
+.email_input:focus,
+.password_input:focus,
+.text_input:focus,
+.number_input:focus,
+.careplan_text_input:focus {
+  outline: none;
+  border: 1.5px solid var(--color-lightGrey);
+}
+
+.signin_password_input {
+  width: 100%;
+  padding: 12px 5px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 14px;
+  font-family: var(--font-inter);
+  background-image: url("./assets/PasswordIcon.svg");
+  background-position: 15px 8px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+}
+
+.signin_password_input:focus {
+  outline: none;
+  border: 1.5px solid var(--color-lightGrey);
+}
+
+.password_container {
+  position: relative;
+}
+
+.dropdown_controller_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.eyeIcon {
+  position: absolute;
+  top: 10px;
+  left: 90%;
+  z-index: 1;
+  cursor: pointer;
+  width: 22px;
+  background: none;
+}
+
+.submit_btn {
+  width: 100%;
+  background: #18334c;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 2px solid #18334c;
+  color: aliceblue;
+  cursor: pointer;
+  font-family: var(--font-inter);
+  margin-top: 10px;
+}
+
+.forgot {
+  text-align: right;
+  color: #18334c;
+  font-family: var(--font-inter);
+  font-weight: 500;
+  letter-spacing: 0px;
+  cursor: pointer;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.sub_title {
+  color: #555555;
+}
+
+.title {
+  font-size: 32px;
+  margin: 10px 0 !important;
+}
+
+.sign_in_form {
+  margin: 20px 0;
+}
+
+.resend {
+  text-align: center;
+  color: var(--color-lightGrey);
+  margin-top: 15px;
+}
+
+.resend span,
+.back_to span {
+  color: #2a85ff;
+  cursor: pointer;
+}
+
+.back_to {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.back_to img {
+  width: 12px;
+}
+
+/* mainLayout */
+.main_layout_container {
+  display: flex;
+}
+
+.main_overflow {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.side_bar_container {
+  width: 200px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.side_bar_logo {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+  cursor: default;
+}
+
+.sidebar_menus {
+  margin-top: 50px;
+}
+
+.sidebar_menu {
+  width: 70%;
+  margin-left: 10%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar_menu img {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar_menu p {
+  width: 80%;
+  text-align: left;
+  color: #777777;
+  font-family: var(--font-inter);
+}
+
+.route_container {
+  background: #f8f7fc;
+  width: calc(100% - 200px);
+  overflow: hidden;
+}
+
+.active,
+.inActive {
+  padding: 10px;
+  height: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.active {
+  background: #fdf1ce;
+}
+
+.inActive {
+  background: transparent;
+}
+
+.search input[type="text"] {
+  width: 100%;
+  padding: 10px 20px 10px 60px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-lightGrey);
+  border-radius: 4px;
+  background: transparent;
+  background-image: url("./assets/search.svg");
+  background-position: 15px 8px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border-radius: 4px;
+}
+
+.search input:focus-visible {
+  outline: none;
+}
+
+.primary_btn {
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  border-color: var(--primary-btn-color);
+  background: var(--primary-btn-color);
+  white-space: nowrap;
+  color: white;
+  font-family: var(--font-inter);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.secondary_btn {
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  border-color: var(--primary-btn-color);
+  background: transparent;
+  white-space: nowrap;
+  color: var(--primary-btn-color);
+  font-family: var(--font-inter);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.update_btn_container {
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+/* .form_input_row .css-b62m3t-container,
+.update_input_row .css-b62m3t-container {
+  top: -9px
+} */
+
+.css-1hig5xi-control,
+.css-f7muw3-control,
+.css-fbcq9k-control {
+  min-height: 42px !important;
+  margin: 0px auto !important;
+}
+
+.care_text {
+  font-size: 12px;
+}
+
+.update_patient_btn {
+  width: 150px;
+}
+
+.no_records {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 18px;
+  font-family: var(--font-inter);
+}
+
+.patientTable_container,
+.alertsTable_container,
+.auditLogTable_container {
+  width: 100%;
+  overflow: auto;
+}
+
+.patients_filter_container,
+.patients_header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.patients_header_container {
+  width: 93%;
+  margin: 0 0 0 1.5rem;
+  justify-content: space-between;
+}
+
+.patient_header_container {
+  width: 100%;
+}
+
+.patients_header_container p,
+.patient_header_tile {
+  width: calc(20% - 20px);
+  margin-left: 22px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.tab_panel_body {
+  background: white;
+  padding: 10px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.tab_panel_title {
+  display: flex;
+  width: 400px;
+}
+
+.tab_panel_title img {
+  cursor: default;
+}
+
+.tab_panel_title p {
+  font-size: 18px;
+  font-weight: 500;
+  width: 300px;
+  margin-left: 10px;
+}
+
+.tab_panel_threshold_container {
+  margin-top: 20px;
+}
+
+.threshold_container {
+  width: 98%;
+  border: 1px solid var(--color-lightGrey);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.single_threshold_container {
+  width: 100%;
+}
+
+.patient_sub_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+  margin-bottom: 10px;
+}
+
+.patient_sub_container p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.patient_sub_container img {
+  width: 30px;
+}
+
+.threshold_box,
+.care_plan_box,
+.threshold_patient_box {
+  background: #ebebeb;
+  /* text-align: center; */
+  height: 20px;
+  margin: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.threshold_box {
+  width: 28%;
+  cursor: pointer;
+}
+
+.care_plan_box {
+  width: calc(46% - 10px);
+  cursor: pointer;
+}
+
+.threshold_patient_box {
+  width: calc(80% - 10px);
+}
+
+.patient_tab_container {
+  margin: 20px;
+}
+
+.patients_filter_container {
+  width: 70%;
+  column-gap: 2.5%;
+}
+
+.patients_filter_container .search {
+  width: 25%;
+}
+
+.patients_filter_container>div:nth-child(3),
+.patients_filter_container .custom_filter_main_container {
+  width: 20%;
+}
+
+.patients_filter_container>div:nth-child(3)>div,
+.patients_filter_container>.custom_filter_main_container>.custom_filter_container {
+  width: 100%;
+}
+
+.patients_filter_container .primary_btn,
+.patients_filter_container .secondary_btn {
+  width: 15%;
+  cursor: pointer;
+}
+
+.patientTable,
+.auditLogTable,
+.alertsTable,
+.staffTable {
+  width: 93%;
+  border-collapse: collapse;
+  font-family: var(--font-inter);
+  margin-left: 40px;
+  margin-top: 20px;
+  background: var(--color-white);
+}
+
+.patientTable th,
+.auditLogTable th,
+.alertsTable th,
+.staffTable th {
+  background-color: var(--color-white);
+  padding: 20px 20px 20px 10px;
+  font-weight: 500;
+  text-align: left;
+  font-size: 14px;
+  font-family: var(--font-inter);
+  /* padding: 10px auto !important; */
+}
+
+.patientTable th {
+  width: 5%;
+}
+
+.staffTable th {
+  width: 5%;
+}
+
+.patientTable th:nth-child(1) {
+  width: 3% !important;
+}
+
+.patientTable th:nth-child(12) {
+  width: 3% !important;
+}
+
+.patientTable th:nth-child(13) {
+  width: 3% !important;
+}
+
+.patientTable th:nth-child(5) {
+  width: 12% !important;
+}
+
+.patientTable td:nth-child(5) {
+  width: 12% !important;
+}
+
+.patientTable th:nth-child(8) {
+  width: 12% !important;
+}
+
+.staffTable th:nth-child(1) {
+  width: 3% !important;
+}
+
+.patientTable td,
+.auditLogTable td,
+.alertsTable td,
+.staffTable td {
+  padding: 10px;
+  font-size: 14px;
+  font-family: var(--font-inter);
+}
+
+.auditLogTable td:nth-child(1) {
+  width: 25% !important;
+}
+
+.auditLogTable td:nth-child(2) {
+  width: 25% !important;
+}
+
+.auditLogTable td:nth-child(3) {
+  width: 25% !important;
+}
+
+.patientTable td {
+  width: 5%;
+}
+
+.staffTable td {
+  width: 13%;
+}
+
+.patientTable td:nth-child(1) {
+  width: 3% !important;
+}
+
+.patientTable td:nth-child(8) {
+  width: 12% !important;
+}
+
+.patientTable th:nth-child(12) {
+  width: 3% !important;
+}
+
+.patientTable th:nth-child(13) {
+  width: 3% !important;
+}
+
+.staffTable td:nth-child(1) {
+  width: 3% !important;
+}
+
+.patientTable td:nth-child(6) p {
+  width: 85px;
+  /* border: 1px solid red; */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+tr {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.name_cursor {
+  cursor: pointer;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-lightGrey);
+  margin: 0 2px;
+}
+
+.staff_name_container {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+
+.table_value_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sticky_notes_container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  min-width: 300px;
+}
+
+.sticky_notes_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.sticky_notes_title>div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sticky_notes_container>textarea {
+  max-height: 200px;
+  min-height: 60px;
+  width: 350px;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid lightgray;
+  resize: vertical;
+}
+
+.sticky_notes_container>textarea:focus-visible {
+  outline: 1px solid gray;
+}
+
+.table_name {
+  cursor: pointer;
+}
+
+.dotActive,
+.dotInActive,
+.dotPending {
+  min-width: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin: 0 2px;
+  margin-top: 3px;
+}
+
+.dotInActive {
+  background-color: var(--color-lightGrey);
+}
+
+.dotActive {
+  background-color: green;
+}
+
+.dotPending {
+  background-color: #f4ea06;
+}
+
+.tab_wrapper li:nth-child(1) {
+  margin-left: 0px;
+}
+
+.tab_wrapper li {
+  margin-left: 50px;
+}
+
+.react-tabs__tab--selected {
+  border: none;
+  border-bottom: 2px solid;
+  background: transparent;
+}
+
+.react-tabs__tab[aria-selected="true"] {
+  font-weight: 600;
+  color: #18334c;
+}
+
+.loader {
+  width: 50%;
+  margin-left: 45%;
+  margin-top: 200px;
+}
+
+.dashboard_sm_card {
+  width: 32%;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.02);
+  /* padding: 10px; */
+}
+
+.dashboard_card_container {
+  padding: 0px 10px;
+}
+
+.dashboard_card_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard_card_name {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard_card_name>img {
+  cursor: default;
+}
+
+.text_grey {
+  margin-left: 5px;
+  color: #999;
+}
+
+.sm_box_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  /* background: #18334C; */
+}
+
+.sm_box_container p {
+  font-size: 18px !important;
+}
+
+.dashboard_card_name div {
+  margin-left: 20px;
+}
+
+.dashboard_card_name div p:nth-child(2) {
+  font-size: 26px;
+}
+
+.dashboard_card_name div p:nth-child(1) {
+  color: #999;
+}
+
+.sm_box {
+  width: 10px;
+  height: 10px;
+}
+
+.sm_box_green {
+  background: #09c65f;
+}
+
+.sm_box_green_fad {
+  background: #b5fcd5;
+}
+
+.sm_box_yellow {
+  background: #ffa800;
+}
+
+.sm_box_yellow_fad {
+  background: #ffe5b2;
+}
+
+.sm_box_blue {
+  background: #2a85ff;
+}
+
+.sm_box_red {
+  background: #fa5959;
+}
+
+.sm_box_red_fad {
+  background: #fdcece;
+}
+
+.sm_box_blue_fad {
+  background: #d1efff;
+}
+
+.dashboard_sm_cards {
+  display: flex;
+  gap: 3%;
+}
+
+.bar_chart_container {
+  width: calc(100% - 20px);
+  background: #fff;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.dashboard_title {
+  color: #111;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.dashboard_sub_title {
+  color: #111;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.dashboard_data_container {
+  width: 75%;
+}
+
+.dashboard_container {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.dashboard_bill_container {
+  width: 25%;
+  background: #fff;
+  height: 100%;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.staff_hour_container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.staff_hour {
+  width: 100%;
+  margin: 0px;
+  margin-left: 15px;
+}
+
+.dashboard_hour {
+  margin-left: 10px;
+}
+
+.dashboard_name {
+  width: 100px;
+}
+
+.cursorDefault {
+  cursor: default;
+}
+
+@media only screen and (max-width: 1300px) {
+  .minimal_left_signIn .minimal_left_banner {
+    width: 95%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .patients_header_container p {
+    width: calc(20% - 20px);
+    margin-left: 20px;
+  }
+
+  .patients_filter_container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .minimal_left_signIn {
+    display: none;
+  }
+
+  .minimal_right_container,
+  .minimal_right {
+    width: 100%;
+  }
+
+  .sign_in_container {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+.field_error {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fa5959;
+  left: 15px;
+  position: relative;
+  top: 8px;
+}
+
+.react-tabs__tab {
+  position: static !important;
+}
+
+.common_select_component>div>div>span {
+  display: none;
+}
+
+
+.users-container {
+  width: 200px;
+  height: 90vh;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.users-inner-container {
+  height: 80vh;
+}
+
+.users-container .title {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.users-container .name {
+  font-size: 18px;
+}
+
+.users-container .email {
+  font-size: 12px;
+}
+
+.user-details {
+  width: 90%;
+  background: whitesmoke;
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.chat-container {
+  display: flex;
+}
+
+.chat-container {
+  display: flex;
+}
+
+.chat-inner-container {
+  display: flex;
+  width: 100%;
+}
+
+.chat-list-container {
+  width: 230px;
+  padding: 10px;
+}
+
+.chat-list-container p {
+  font-size: 20px;
+  font-family: var(--font-inter);
+}
+
+.chat-users {
+  background: #FCF5E5;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.chat-users p {
+  font-size: 16px;
+}
+
+.chatlist-title-conatiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-message-container {
+  flex: 1;
+  height: 95vh;
+  padding: 10px;
+  position: relative;
+}
+
+.send-msg-container {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.chat-message-container .title {
+  font-size: 18px;
+  font-family: var(--font-inter);
+}
+
+.messages-box {
+  width: 100%;
+  min-height: 80vh;
+  background: #F9F6EE;
+  overflow: hidden;
+  /* display: flex; */
+}
+
+/* .message-inner-scroll {
+  overflow-y: scroll;
+  height: 79vh;
+  display: flex;
+  flex-direction: column-reverse;
+} */
+
+.message-inner-scroll {
+  height: 78vh; /* Set this to the desired height of your chat window */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #f1f1f1; /* Background color for the chat container */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.message-left-box,
+.message-right-box {
+  width: 100%;
+  height: fit-content;
+  max-width: 200px;
+  background: #F0EAD6;
+  padding: 10px;
+  overflow: hidden;
+  word-wrap: break-word; /* This ensures long words wrap to the next line */
+  word-break: break-word; /* This ensures long words break if necessary */
+  white-space: pre-wrap; /* This preserves spaces and breaks in the text */
+}
+
+
+.message-left-box {
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.message-right-box {
+  margin-right: auto;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.sender {
+  font-size: 12px;
+}
+
+.message {
+  font-size: 14px;
+}
+
+.send-msg-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.send-btn,
+.new-btn {
+  width: 100px;
+  background: #18334c;
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 2px solid #18334c;
+  color: aliceblue;
+  cursor: pointer;
+  font-family: var(--font-inter);
+  /* margin-top: 10px; */
+}
+
+.new-btn {
+  width: fit-content;
+}
+
+.send-msg-container .input {
+  max-width: 80%;
+}
